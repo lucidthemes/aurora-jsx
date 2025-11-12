@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2025-11-12
+
+### Fixed
+
+- CartObject import path case mismatch in CartReducer
+- CartObject import path case mismatch in CartReducer test
+
 ## [1.0.2] - 2025-11-12
 
 ### Fixed

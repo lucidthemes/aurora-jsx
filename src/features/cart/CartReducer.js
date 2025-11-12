@@ -1,4 +1,4 @@
-import { CartObject, CartItemObject } from './cartObjects';
+import { CartObject, CartItemObject } from './CartObjects';
 
 function addCartItem(state, cartItemProduct, productId, variationId, quantity, existingCartItem) {
   let cartItemProductVariation = '';
