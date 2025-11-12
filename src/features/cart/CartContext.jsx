@@ -1,5 +1,5 @@
 import { createContext, useContext, useReducer, useEffect } from 'react';
-import { CartObject } from './cartObjects';
+import { CartObject } from './CartObjects';
 import CartReducer from './CartReducer';
 import { getProductById } from '@server/products/getProduct';
 

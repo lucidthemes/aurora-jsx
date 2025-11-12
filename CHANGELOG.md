@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2025-11-12
+
+### Fixed
+
+- CartObject import path case mismatch in CartContext
+
+## [1.0.1] - 2025-11-12
+
+### Fixed
+
+- CartContext import path case mismatch in AppProviders
+
 ## [1.0.0] - 2025-11-12
 
 - Initial release
