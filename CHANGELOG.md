@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2025-11-12
+
+### Fixed
+
+- Cart import path case mismatch in Cart page
+
 ## [1.0.3] - 2025-11-12
 
 ### Fixed
