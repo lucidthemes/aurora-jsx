@@ -1,5 +1,5 @@
 import CartReducer from '../CartReducer';
-import { CartObject } from '../cartObjects';
+import { CartObject } from '../CartObjects';
 
 describe('CartReducer', () => {
   const mockProductWithVariation = {
