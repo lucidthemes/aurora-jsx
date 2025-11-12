@@ -1,7 +1,7 @@
 import { HeaderLayoutProvider } from './HeaderLayoutContext';
 import { MobileMenuProvider } from './MobileMenuContext';
 import { AuthProvider } from './AuthContext';
-import { CartProvider } from '@features/Cart/cartContext';
+import { CartProvider } from '@features/cart/CartContext';
 
 export function AppProviders({ children }) {
   return (
