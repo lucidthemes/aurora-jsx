@@ -1,7 +1,7 @@
 import { render, screen, within, fireEvent } from '@testing-library/react';
 import Items from '../../components/items';
 
-vi.mock('@features/Cart/cartContext', () => ({
+vi.mock('@features/cart/CartContext', () => ({
   useCartContext: vi.fn(),
 }));
 
@@ -9,7 +9,7 @@ vi.mock('@server/products/getAttribute', () => ({
   getAttributeMap: vi.fn(),
 }));
 
-import { useCartContext } from '@features/Cart/cartContext';
+import { useCartContext } from '@features/cart/CartContext';
 import { getAttributeMap } from '@server/products/getAttribute';
 import { MemoryRouter } from 'react-router-dom';
 

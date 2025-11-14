@@ -1,7 +1,7 @@
 import { render, screen, within, fireEvent, waitFor } from '@testing-library/react';
 import Totals from '../../components/totals';
 
-vi.mock('@features/Cart/cartContext', () => ({
+vi.mock('@features/cart/CartContext', () => ({
   useCartContext: vi.fn(),
 }));
 
@@ -9,7 +9,7 @@ vi.mock('@server/shop/getCoupon', () => ({
   getCouponByCode: vi.fn(),
 }));
 
-import { useCartContext } from '@features/Cart/cartContext';
+import { useCartContext } from '@features/cart/CartContext';
 import { getCouponByCode } from '@server/shop/getCoupon';
 import { MemoryRouter } from 'react-router-dom';
 
