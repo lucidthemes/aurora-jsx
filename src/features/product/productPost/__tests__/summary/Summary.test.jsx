@@ -1,7 +1,7 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import Summary from '../../summary';
 
-vi.mock('@features/Cart/cartContext', () => ({
+vi.mock('@features/cart/CartContext', () => ({
   useCartContext: vi.fn(),
 }));
 
@@ -17,7 +17,7 @@ vi.mock('@server/products/getAttribute', () => ({
   getAttributeArray: vi.fn(),
 }));
 
-import { useCartContext } from '@features/Cart/cartContext';
+import { useCartContext } from '@features/cart/CartContext';
 import { getCategoryById } from '@server/products/getCategory';
 import { getTagsArray } from '@server/products/getTags';
 import { getAttributeArray } from '@server/products/getAttribute';
