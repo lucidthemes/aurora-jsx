@@ -40,6 +40,24 @@ Staging site: [demo](https://aurora-jsx-staging.vercel.app/)
 - [Contact](https://aurora-jsx.vercel.app/contact)
 - [404](https://aurora-jsx.vercel.app/404)
 
+## Built with
+
+Frontend
+
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Embla Carousel](https://www.embla-carousel.com/)
+- [Google fonts (EB Garamond)](https://fonts.google.com/specimen/EB+Garamond)
+
+Testing
+
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Vitest](https://vitest.dev/)
+
+Build tool
+
+- [Vite](https://vite.dev/)
+
 ## Installation
 
 1. Clone the repository
