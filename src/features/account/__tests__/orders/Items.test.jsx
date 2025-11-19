@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, within } from '@testing-library/react';
+import { render, screen, fireEvent, within, act } from '@testing-library/react';
 import Items from '../../components/orders/Items';
 
 vi.mock('@server/products/getAttribute', () => ({
@@ -164,7 +164,7 @@ describe('Items component', () => {
     expect(within(firstListItem).getByRole('button', { name: /expand order/i })).toBeInTheDocument();
   });
 
-  test('renders order details when expand button clicked', () => {
+  test('renders order details when expand button clicked', async () => {
     render(<Items orders={mockOrders} />);
 
     const ordersList = screen.getByRole('list', { name: /orders/i });
@@ -175,7 +175,10 @@ describe('Items component', () => {
 
     const expandButton = within(firstListItem).getByRole('button', { name: /expand order/i });
     expect(expandButton).toBeInTheDocument();
-    fireEvent.click(expandButton);
+
+    await act(async () => {
+      fireEvent.click(expandButton);
+    });
 
     expect(within(firstListItem).getByRole('heading', { name: /order details/i })).toBeInTheDocument();
 
