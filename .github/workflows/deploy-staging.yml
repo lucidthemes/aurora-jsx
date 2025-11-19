@@ -6,10 +6,6 @@ on:
       - closed
     branches:
       - main
-    paths-ignore:
-      - '.github/**'
-      - 'CHANGELOG.md'
-      - 'README.md'
 
 jobs:
   deploy:
