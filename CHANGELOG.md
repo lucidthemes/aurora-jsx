@@ -7,18 +7,19 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 - post-comments.json datetime incorrect format
+- shop page not showing not found error for categories and tags that don't exist
 
 ## [1.0.11] - 2025-12-01
 
 ### Changed
 
-- Updated dependencies
+- updated dependencies
 
 ## [1.0.10] - 2025-11-20
 
 ### Changed
 
-- Updated dependencies
+- updated dependencies
 
 ## [1.0.9] - 2025-11-13
 
