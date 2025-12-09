@@ -30,6 +30,7 @@ All notable changes to this project will be documented in this file.
 ##### SearchForm
 
 - useSearchForm eslint error message of calling setState synchronously within an effect by removing unnecessary useEffect
+- useSearchForm test to work with hook eslint error fix
 
 ## [1.0.13] - 2025-12-09
 
