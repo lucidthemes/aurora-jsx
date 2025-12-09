@@ -22,6 +22,13 @@ All notable changes to this project will be documented in this file.
 
 - useOrders eslint error message of calling setState synchronously within an effect
 
+##### BlogPost
+
+- useSinglePost eslint error message of calling setState synchronously within an effect
+- useNavigation eslint error message of calling setState synchronously within an effect
+- useRelated eslint error message of calling setState synchronously within an effect
+- useTags eslint error message of calling setState synchronously within an effect
+
 ##### ProductPost
 
 - useSingleProduct eslint error message of calling setState synchronously within an effect
