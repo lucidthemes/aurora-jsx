@@ -29,6 +29,10 @@ All notable changes to this project will be documented in this file.
 - useRelated eslint error message of calling setState synchronously within an effect
 - useTags eslint error message of calling setState synchronously within an effect
 
+##### Cart
+
+- CouponForm eslint error message of calling hooks conditionally
+
 ##### ProductPost
 
 - useSingleProduct eslint error message of calling setState synchronously within an effect
