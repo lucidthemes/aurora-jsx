@@ -33,6 +33,13 @@ All notable changes to this project will be documented in this file.
 
 - CouponForm eslint error message of calling hooks conditionally
 
+##### Checkout
+
+- useCheckout eslint error message of calling setState synchronously within an effect by removing unnecessary useEffect
+- orderReceived useOrderReceived eslint error message of calling setState synchronously within an effect
+- orderReceived Items component eslint error message of calling hooks conditionally
+- orderReceived useItems hook eslint error message of calling hooks conditionally
+
 ##### ProductPost
 
 - useSingleProduct eslint error message of calling setState synchronously within an effect
