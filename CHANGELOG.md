@@ -6,11 +6,26 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-#### ProductList
+#### Features
+
+##### ProductList
 
 - reformat productList component to resolve eslint error of calling setState synchronously within an effect
 - reformat hooks to resolve eslint error of calling setState synchronously within an effect
 - reformat tests to resolve eslint error of calling setState synchronously within an effect
+
+### Fixed
+
+#### Features
+
+##### ProductPost
+
+- useSingleProduct eslint error message of calling setState synchronously within an effect
+- useBreadcrumb eslint error message of calling setState synchronously within an effect
+- useRelated eslint error message of calling setState synchronously within an effect
+- useAddCartForm eslint error message of calling setState synchronously within an effect
+- useVariations eslint error message of calling setState synchronously within an effect
+- useList eslint error message of calling setState synchronously within an effect
 
 ## [1.0.13] - 2025-12-09
 
