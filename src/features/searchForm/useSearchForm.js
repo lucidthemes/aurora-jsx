@@ -1,16 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function useSearchForm(term, location, headerSearchActive, handleHeaderSearchActive) {
-  const [searchFormTerm, setSearchFormTerm] = useState('');
+  const [searchFormTerm, setSearchFormTerm] = useState(term || '');
   const [searchFormError, setSearchFormError] = useState('');
   const navigate = useNavigate();
-
-  useEffect(() => {
-    if (!term) return;
-
-    setSearchFormTerm(term);
-  }, [term]);
 
   const handleFormChange = (e) => {
     const { value } = e.target;
@@ -23,7 +17,6 @@ export default function useSearchForm(term, location, headerSearchActive, handle
     const trimmedSearchTerm = searchFormTerm.trim();
 
     if (trimmedSearchTerm) {
-      setSearchFormTerm('');
       setSearchFormError('');
       navigate(`/search/${trimmedSearchTerm}`);
 
