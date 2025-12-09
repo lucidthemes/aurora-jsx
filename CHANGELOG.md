@@ -27,6 +27,10 @@ All notable changes to this project will be documented in this file.
 - useVariations eslint error message of calling setState synchronously within an effect
 - useList eslint error message of calling setState synchronously within an effect
 
+##### SearchForm
+
+- useSearchForm eslint error message of calling setState synchronously within an effect by removing unnecessary useEffect
+
 ## [1.0.13] - 2025-12-09
 
 ### Changed
