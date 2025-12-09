@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - [Unreleased]
+
+### Changed
+
+#### ProductList
+
+- reformat productList component to resolve eslint error of calling setState synchronously within an effect
+- reformat hooks to resolve eslint error of calling setState synchronously within an effect
+- reformat tests to resolve eslint error of calling setState synchronously within an effect
+
 ## [1.0.13] - 2025-12-09
 
 ### Changed
