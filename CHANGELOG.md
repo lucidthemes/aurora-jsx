@@ -18,6 +18,10 @@ All notable changes to this project will be documented in this file.
 
 #### Features
 
+##### Account
+
+- useOrders eslint error message of calling setState synchronously within an effect
+
 ##### ProductPost
 
 - useSingleProduct eslint error message of calling setState synchronously within an effect
