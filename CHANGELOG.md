@@ -16,6 +16,12 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 
+#### Components
+
+##### Footer
+
+- copyright link eslint error message of not having noreferrer
+
 #### Features
 
 ##### Account
