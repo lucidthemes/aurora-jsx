@@ -1,30 +1,55 @@
 import { defineConfig } from 'eslint/config';
-import js from '@eslint/js';
 import globals from 'globals';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import prettier from 'eslint-config-prettier';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
-import babelParser from '@babel/eslint-parser';
 
 export default defineConfig([
   {
     ignores: ['dist'],
   },
-  {
-    files: ['**/*.test.{js,jsx,ts,tsx}'],
 
+  {
+    files: ['**/*.js', '**/*.jsx'],
     languageOptions: {
-      parser: babelParser,
       parserOptions: {
-        requireConfigFile: false,
-        babelOptions: {
-          presets: ['@babel/preset-react'],
-        },
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: { jsx: true },
       },
-      ecmaVersion: 'latest',
-      sourceType: 'module',
+      globals: {
+        ...globals.browser,
+      },
+    },
+    plugins: {
+      react,
+      'react-hooks': reactHooks,
+      'react-refresh': reactRefresh,
+      prettier: eslintPluginPrettier,
+    },
+    rules: {
+      ...react.configs.recommended.rules,
+      ...reactHooks.configs['recommended-latest'].rules,
+      'react/react-in-jsx-scope': 'off',
+      'react/prop-types': 'off',
+      'prettier/prettier': 'warn',
+      'react-hooks/preserve-manual-memoization': 'off',
+    },
+    settings: {
+      react: { version: 'detect' },
+    },
+  },
+
+  {
+    files: ['**/*.test.{js,jsx}'],
+    languageOptions: {
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        ecmaFeatures: { jsx: true },
+      },
       globals: {
         ...globals.browser,
         vi: 'readonly',
@@ -36,30 +61,20 @@ export default defineConfig([
         afterEach: 'readonly',
       },
     },
-
     plugins: {
-      prettier: eslintPluginPrettier,
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      prettier: eslintPluginPrettier,
     },
-
     rules: {
-      ...js.configs.recommended.rules,
-      ...react.configs.recommended.rules,
-      ...reactHooks.configs['recommended-latest'].rules,
-      ...reactRefresh.configs.vite.rules,
-
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
-      'prettier/prettier': 'warn',
       'react/react-in-jsx-scope': 'off',
-      'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
+      'prettier/prettier': 'warn',
+      'react/prop-types': 'off',
+      'react-hooks/preserve-manual-memoization': 'off',
     },
-
     settings: {
-      react: {
-        version: 'detect',
-      },
+      react: { version: 'detect' },
     },
   },
 

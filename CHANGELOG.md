@@ -14,6 +14,10 @@ All notable changes to this project will be documented in this file.
 - reformat hooks to resolve eslint error of calling setState synchronously within an effect
 - reformat tests to resolve eslint error of calling setState synchronously within an effect
 
+#### Root
+
+- eslint config to better handle linting JS/JSX and test files
+
 ### Fixed
 
 #### Components
