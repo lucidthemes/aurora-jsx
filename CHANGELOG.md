@@ -22,6 +22,10 @@ All notable changes to this project will be documented in this file.
 
 - copyright link eslint error message of not having noreferrer
 
+##### Header
+
+- Search component eslint error message of calling hooks conditionally
+
 #### Features
 
 ##### Account
