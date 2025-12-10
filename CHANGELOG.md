@@ -26,6 +26,10 @@ All notable changes to this project will be documented in this file.
 
 - Search component eslint error message of calling hooks conditionally
 
+##### Notification
+
+- useNotification hook eslint error message of calling setState synchronously within an effect
+
 #### Features
 
 ##### Account

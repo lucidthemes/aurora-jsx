@@ -4,7 +4,11 @@ export default function useNotification(duration, onClose) {
   const [notificationVisible, setNotificationVisible] = useState(false);
 
   useEffect(() => {
-    setNotificationVisible(true);
+    const showNotification = () => {
+      setNotificationVisible(true);
+    };
+
+    showNotification();
 
     const hideNotification = setTimeout(() => {
       setNotificationVisible(false);
