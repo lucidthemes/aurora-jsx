@@ -1,4 +1,4 @@
-export default function Checkbox({ name, checked, onChange, required = false, className = '', label, labelSrOnly = false, error, ...props }) {
+export default function Checkbox({ name, checked, onChange, className = '', label, labelSrOnly = false, error, ...props }) {
   const labelSrOnlyClass = labelSrOnly ? 'sr-only' : '';
 
   return (

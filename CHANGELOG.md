@@ -22,6 +22,10 @@ All notable changes to this project will be documented in this file.
 
 - copyright link eslint error message of not having noreferrer
 
+##### Form
+
+- checkbox component eslint error message of assigned a value but never used
+
 ##### Header
 
 - Search component eslint error message of calling hooks conditionally
